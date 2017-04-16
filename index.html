@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Tic Tac Toe Game</title>
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/site.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
+    
+        
+    <body>
+        
+        <div class="contanier-tic-toc text-center">
+            <h1>Tic Tac Toe Game</h1>
+            
+            <div class="contanier" id="adversary">
+                <h2>Who will be your adversary?</h2>
+                <div id="row">
+                    <div class="col-sm-6" id="computer">
+                        <img src="img/computer.png" class="responsive" >
+                        <h3>Computer</h3>
+                    </div>
+                    <div class="col-sm-6"  id="friend">
+                        <img src="img/friends.png" class="responsive">
+                        <h3>Friend</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contanier" id="choise">
+                <h2>X or O ?</h2>
+                <div id="row">
+                    <div class="col-sm-6" id="x">
+                        <h3>X</h3>
+                    </div>
+                    <div class="col-sm-6"  id="o">
+                        <h3>O</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contanier" id="playgame">
+                <h2 id="turn">Player one</h2>
+                <div id="contanier-game">
+                    <div class="box" id="1">&nbsp;</div>
+                    <div class="box" id="2">&nbsp;</div>
+                    <div class="box" id="3">&nbsp;</div>
+                   
+                    <div class="box" id="4">&nbsp;</div>
+                    <div class="box" id="5">&nbsp;</div>
+                    <div class="box" id="6">&nbsp;</div>
+                    
+                    <div class="box" id="7">&nbsp;</div>
+                    <div class="box" id="8">&nbsp;</div>
+                    <div class="box" id="9">&nbsp;</div>
+                    
+                </div>
+            </div>
+            
+            <div class="contanier" id="endgame">
+                <h2 id="winner">Fulano te tal winner !</h2>
+                <h3 id="reset">Reset the game</h3>
+            </div>
+
+        </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/tictactoe.js"></script>
+    <script language="javascript">
+    </script>
+        
+    
+    </body>
+</html>

@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+
+body {
+    height: 100%;
+    width: 100%;
+    
+    background-color: #ECF0F1;
+    
+    font-family: "Russo One";
+}
+
+h1{
+    color: #F39C12;    
+}
+
+#adversary, #choise{
+    margin-top: 10%;
+}
+
+#adversary img{
+    width: 100px;
+}
+
+#choise, #playgame, #endgame{
+    display: none;
+}
+
+#computer:hover, #friend:hover,#x:hover,#o:hover,.box:hover, #reset:hover{
+    
+    background-color: #8EFFC1; 
+    
+    animation-name: choise;
+    animation-duration: 2s;
+}
+
+#contanier-game{
+    width: 300px;
+    height: 300px;
+    
+    margin: auto;
+    padding-top: 10px;
+    
+}
+
+#reset{
+    margin-top: 20px;
+    
+    
+}
+
+.box{
+    display: inline-block;
+    position: static;
+    
+    margin: 0px -5px;
+    padding: 25px 0px 0px 0px;
+    
+    width: 100px;
+    height: 100px;
+    
+    border-style: solid;
+    border-width: 3px;
+    border-color: #BDC3C7;
+    
+    font-size: 30px;
+}
+
+@keyframes choise {
+    from {background-color: transparent;}
+    to {background-color: #8EFFC1;}
+}
