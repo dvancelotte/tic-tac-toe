@@ -25,13 +25,11 @@ $('.box').click(function (evt) {
     function verify(winner){
          if(winner!='no yet'){
             showNext('#playgame','#endgame');
-            if(winner=='yes'){
-                if(turn=='user'){
-                   document.getElementById("winner").innerHTML = "You lose :(";  
-                }else{
-                   document.getElementById("winner").innerHTML = "You win :D";  
-                }                
-            }
+            if(winner==choise){
+                document.getElementById("winner").innerHTML = "You win :D";  
+            }else if(winner==adversaryC){
+                document.getElementById("winner").innerHTML = "You lose :(";  
+            }                
             else{
                 document.getElementById("winner").innerHTML = "A tie :(";
             }
@@ -53,6 +51,8 @@ $('.box').click(function (evt) {
                 verify(findWinner(0));
                 if(array.indexOf(undefined)>-1){
                     computerplay();
+                    turn = "user";
+
                 }
             }else{
                 document.getElementById("turn").innerHTML = "Player two";
@@ -67,8 +67,7 @@ $('.box').click(function (evt) {
         }
         
         verify(findWinner(0));
-        if(adversary=='computer')
-            turn = "user";
+       
 
         
        
@@ -112,7 +111,7 @@ function findWinner(option){
             letter = array[i];
             if(letter){
                 if(array[i+1] == letter && array[i+2] == letter){
-                    return 'yes';
+                    return letter;
                 }
             }
         }
@@ -144,7 +143,7 @@ function findWinner(option){
             letter = array[i];
             if(letter){
                 if(array[i+3] == letter && array[i+6] == letter){
-                    return 'yes';
+                    return letter;
                 }
             }
         }
@@ -182,7 +181,7 @@ function findWinner(option){
             letter = array[i];
             if(letter){
                 if(array[i+index] == letter && array[i+index*2] == letter){
-                    return 'yes'
+                    return letter
                 }
             }
             
